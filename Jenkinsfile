@@ -5,7 +5,7 @@ pipeline {
         stage ('Build Image') {
             steps {
                 script {
-                    dockerapp = docker.build("jenniedocker/api_produto", '-f ./src/Dockerfile ./src')
+                    dockerapp = docker.build("jenniedocker/api-produto", '-f ./src/Dockerfile ./src')                     
                 }
                 
             }

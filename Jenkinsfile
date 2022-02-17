@@ -6,6 +6,10 @@ pipeline {
             steps {
                 script {
                     dockerapp = docker.build("jenniedocker/api-produto:", '-f ./src/Dockerfile ./src') 
-                }                
-            }
+                }
+
+            }             
+        
         }
+    }
+}
